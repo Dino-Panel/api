@@ -271,61 +271,7 @@ const locations = [
     code: "de1",
     name: "Falkenstein, Germany",
     flag_url: "/img/flags/de.png",
-    id: 3,
-  },
-  {
-    code: "nl1",
-    name: "Zuid-Holland, Netherlands",
-    flag_url: "/img/flags/nl.png",
-    id: 15,
-  },
-  {
-    code: "fi1",
-    name: "Helsinki, Finland",
-    flag_url: "/img/flags/fi.png",
     id: 2,
-  },
-  {
-    code: "bg1",
-    name: "Sofia, Bulgaria",
-    flag_url: "/img/flags/bg.png",
-    id: 7,
-  },
-  {
-    code: "bg2",
-    name: "Sofia, Bulgaria",
-    flag_url: "/img/flags/bg.png",
-    id: 17,
-  },
-  {
-    code: "us1",
-    name: "Virginia, America",
-    flag_url: "/img/flags/us.png",
-    id: 8,
-  },
-  {
-    code: "us2",
-    name: "Illinois, America",
-    flag_url: "/img/flags/us.png",
-    id: 16,
-  },
-  {
-    code: "us3",
-    name: "California, America",
-    flag_url: "/img/flags/us.png",
-    id: 10,
-  },  
-  {
-    code: "us4",
-    name: "Oklahoma, America",
-    flag_url: "/img/flags/us.png",
-    id: 5,
-  },
-  {
-    code: "us5",
-    name: "Arizona, America",
-    flag_url: "/img/flags/us.png",
-    id: 12,
   },
 ];
 
@@ -959,7 +905,7 @@ app.post("/qemu/myservers/:serverCode", async (req, res) => {
       var cloudinitConfig = {
         password: cloudinitPassword,
         hostname: target2.name.split(" ").join("-"),
-        phone_home: `http://5.161.51.188:${serverPort}/qemu/completeinstall/${target2.code}`,
+        phone_home: `http://null:${serverPort}/qemu/completeinstall/${target2.code}`,
         base_image: image,
       };
 
