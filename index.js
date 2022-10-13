@@ -477,7 +477,7 @@ async function updatePterodactylServerCache() {
         price: dbServer.price * priceIndex,
         billingInterval: dbServer?.billingInterval || 1,
         manage_url:
-          "https://billing.yourdomain.com/server/" + server.attributes.identifier,
+          "https://panel.yourdomain.com/server/" + server.attributes.identifier,
         install_progress: serverInstallProgress,
         specs: {
           cpu: server.attributes.limits.cpu / 100,
